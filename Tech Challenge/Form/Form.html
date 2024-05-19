@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Form.css">
+
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="bg-box"></div>
+
+            <form id="step1-form" action="">
+
+                <div class="inputs">
+                    <label for="nama">Name</label>
+                    <input type="text" id="name" placeholder="Masukkan nama anda...">
+                    <p id="error-name" class="error-message"></p>
+                </div>
+
+                <div class="inputs">
+                    <label for="nama">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email anda...">
+                    <p id="error-email" class="error-message"></p>
+                </div>
+
+                <div class="inputs">
+                    <label for="nama">Your Password</label>
+
+                    <div class="hide">
+                        <input type="password" id="pass" placeholder="Masukkan password anda...">
+                        <div id="show-pass"  class="show"></div>
+                    </div>
+                    
+                    <p id="error-pass" class="error-message"></p>
+                </div>
+
+                <div class="inputs">
+                    <label for="nama">Password confirmation</label>
+
+                    <div class="hide">
+                        <input type="password" id="passc" placeholder="Masukkan password anda sekali lagi...">
+                        <div id="show-passc"  class="show"></div>
+                    </div>
+                    
+                    <p id="error-passc" class="error-message"></p>
+                </div>
+
+            <div class="p-details">
+                <input type="radio" name="details" id="dot-1">
+                <input type="radio" name="details" id="dot-2">
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one" id="dots"></span>
+                        <span class="details">Male</span>
+                    </label>
+
+                    <label for="dot-2">
+                        <span class="dot two" id="dots"></span>
+                        <span class="details">Female</span>
+                    </label>
+                </div>
+
+                <p id="error-radio" class="error-message"></p>
+            </div>
+
+            </form>
+
+            
+        </div>
+
+        <button id="submit-button" type="submit" href="">Submit</button>
+    </div>
+
+    <script src="Form.js"></script>
+</body>
+</html>
